@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Poppins',sans-serif;
+ 
+}
+.home{
+    width: 100%;
+    height: 60%;
+    position: relative;
+    top: 10%;
+    display: flex;
+  
+     
+}  
+.home img{
+    height: 700px;
+    width: 100%;
+    transition: filter 10s ease-in-out;
+
+   
+  
+    
+}
+.bi-list{
+   position: absolute;
+   left: 90%;
+   font-size: 30px;
+   top: 25px;
+   display: none;
+   
+  
+}
+
+i.bi-x-square{
+    display: none;
+}
+.home1 img{
+    width: 100%;  
+    height: 700px;
+    position: absolute;
+    transition: all 0.5s ease;
+    
+
+}
+.home2{
+    transition: animation 0.5s ease-in-out;
+    animation: change 7s infinite linear reverse;
+    animation-timing-function: linear;
+    
+}
+.home1:hover {
+    transition: all 0.5s ease-in;
+    
+}
+h1{
+    color: rgb(19, 98, 19);
+    font-style: italic;
+    padding: 5px;
+}
+@keyframes change{
+
+  0%{
+       display:none;
+  }
+  20%{
+    display:none;
+}
+30%{
+    display:none;
+}
+
+40%{
+    display:none;
+}
+50%{
+    display:none;
+}
+60%{
+
+    display: block;
+  }
+  70%{
+
+    display: block;
+  }
+  80%{
+
+    display: block;
+  }
+  90%{
+
+    display: block;
+  }
+  100%{
+
+    display: block;
+  }
+}
+
+
+
+
+span{  
+    position: absolute;
+    color: white;
+   top: 300px;
+   left: 10%;
+   padding: 15px;
+   margin: 12px;
+   
+}   
+span h2,p{
+    padding: 5px;
+    font-size: 30px;  
+
+}
+span button{
+    height: 30px;
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 20px;
+ 
+    color: #fff;
+   background-color: transparent;
+   border: 1px solid;
+   margin-top: 10px;
+   margin-left: 15px;
+    transition: transform 0.5s ease;
+}
+span button:hover{
+    transform:rotateY(40deg);
+    background-color: gray;
+    
+}
+
+
+
+.home2 img{
+    width: 100%;
+    height: 700px;
+    position: absolute;  
+  left: 0;
+  right: 0;
+  
+   
+}
+.home2 span{
+    display: block;
+  
+}
+.home2 img:hover{
+   
+    transition: all 0.5s ease;
+   
+}
+header{
+    display: flex;
+   align-items: center;
+    position: relative;
+    height: 100px;
+}
+ ul, li, a{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+left: 30%;
+bottom: 0;
+padding: 12px;  
+   font-size: 27px;
+   color: black;
+   position: relative;
+  
+margin: 4px;
+  
+}
+ ul li a::after{
+    content: "";
+     background-color: red;
+   
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: 0.5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+.about{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    display: flex;
+   margin-top: 46.7%;
+   padding: 20px  0;
+   height: 600px;
+   flex-direction: column;
+   bottom: 110px;
+   left: 30px;
+
+}
+.about h3,p{
+    font-size: 30px;
+    word-wrap: break-word;   
+   padding: 1px;
+   letter-spacing: 1px;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+  
+  
+}
+.about h3{
+    color: blue;
+    padding: 15px;
+    margin: 2px;
+}
+.about h1{
+    font-size: 40px;
+    text-align: center;
+}
+.about h3{
+    font-size: 38px;
+    
+    left: 55px;
+    
+}
+.about p{
+    font-size: 15px;
+    color: gray;
+    left: 45px;
+    word-break:break-all;
+
+    
+
+}
+.about img{
+    width: 500px;
+   height:100%;    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 13%;
+    top: 30%;
+}  
+.our-expertise{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+    height: 100%;
+    top: 400px;
+  
+}
+.our-expertise img{
+   
+  position: relative;
+    padding: 20px;
+    width: 30%;
+    margin-top: 20px;
+}
+.col1 img{
+    display: flex;
+    height: 450px;
+    width: 30%;
+    position: absolute;
+    left: 0;
+}
+.col2 img{
+    display: flex;
+    height: 450px;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+
+}
+.col3 img{
+display: flex;
+height: 450px;
+width: 30%;
+position: absolute;
+left: 67%;
+}
+figcaption{ 
+   width: 100px;
+   font-size: 11px;
+   position: relative;
+}
+.col1 figcaption{
+position: absolute;
+left: 20px;
+top: 427px;
+background-color: gray;
+width: 567px;
+height: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 33px;
+display: none;
+transition:all    0.9s ;
+}.col1:hover figcaption{
+    display: block;
+}
+.col2 figcaption{
+    position: absolute;
+   
+    top: 427px;
+  left: 36%;
+        font-size: 30px;
+        width: 567px;
+height: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+        
+        background-color: gray;
+        display: none;
+        transition:all    0.5s ;
+        
+       
+      
+}
+.col2:hover figcaption{
+    display: block;
+ 
+
+}
+.col3 figcaption{
+    position: absolute;
+   
+    top: 427px;
+  left: 68%;
+        font-size: 30px;
+        width: 567px;
+height: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+        
+        background-color: gray;
+      display: none;
+        transition:all    0.9s ;
+        
+       
+      
+}
+.col3:hover figcaption{
+    display: block;
+ 
+
+}
+.services{
+    display: flex;
+    width: 30%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%,50%);
+
+
+}
+.bi-x-square{
+    font-size: 30px;
+    display: block;   
+}
+.services h1 {
+   position: absolute;
+   left: 100%;
+   top: 100%;
+   margin-top: 45%
+}.services img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    position: relative;
+    bottom: 0;
+    margin-top: 30%;
+    top: 800px;
+    left: 330px;    
+    padding: 10px;
+}
+
+.services img{
+    width:350px;
+   position: relative;
+   height: 450px; 
+   padding: 0 10px;
+   margin-right: 100px;
+
+}
+.services h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 328px;
+    position: absolute;
+    bottom: 0;
+    margin-top: 100%;
+    top: 820px;
+   
+    left: 370px;    
+    padding: 10px;
+        height: 10px ;
+
+      transition: display 1s  ease;
+      height: 425px;
+ transform: translateY(-100%);
+ background-color: rgba(221, 33, 52, 0.377);
+       
+         
+       
+}
+.service1:hover h3{
+    display: none;
+}
+.service2:hover h3{
+    display: none;
+}
+.service3:hover h3{
+    display: none;
+}
+.service2 img{
+   
+    z-index: -1;
+}
+.service1 h3{
+    position: absolute;
+   left: -14%;
+   right: -100px;
+ 
+
+}
+.service2 h3{
+    position: absolute;
+    margin-left: 19px; 
+}
+.service3 h3{
+    position: absolute;
+    left: 860px;
+    right: 0;
+}
+footer{
+    height: 500px;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.686);
+    position: relative;
+    top: 800px;
+    margin-top: 20%;
+    display: flex;
+    
+}
+.container{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 33%;
+    transform: translate(-50%,50%);
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+}
+#copy{
+    margin-top: 220px;
+    width: 100px;
+    width: 100%;
+    color: #fff;
+}
+@media only screen and (max-width:600px) {
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .bi-list{
+        display: block;
+    }
+    header{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        
+width: 100%;
+    }
+    ul,li,a{
+        position: relative;
+        left: 10%;
+        top: 120px;
+        display: flex;
+        flex-direction: column;
+    z-index: 1;
+
+        margin: 3px;
+    }
+    li{
+        position: relative;
+        margin-top: -250px;
+        color: #fff;
+        height: 350px;
+        
+      
+    }
+    i.bi-x-square{   
+        display: block;
+     }
+    ul{
+        position: relative;
+        top: 400px;
+        background-color: gray;
+        display: none;
+    }
+    .home{
+        display: flex;
+        height: 70%;
+
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 100%;
+        position: relative;
+        top: 500px;
+    }
+    .home h3,p{
+        font-size: 15px;
+
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about img{
+        display: none;
+
+    }
+    .our-expertise{
+        display: flex;
+        flex-direction: column;
+        position:relative;
+        align-items: center;
+        justify-content: center;
+        top: 100%;
+        left: 0;
+        bottom: 0;
+        margin-top: 100%;
+        padding-top: 25%;
+
+    }
+    .our-expertise img{
+        display: flex;
+        position: relative;
+        padding: 10% 0;
+
+    }
+    .col1{
+        width:100%;
+        position: absolute;
+        top: 100%;
+     
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 10%;
+
+    }
+    .col2{
+       
+        position: absolute;
+        top: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: flex-end;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 10%;
+  }
+    .col3{
+        position: absolute;
+        left: 10%;
+top: 60%;
+    }
+    .col1 img{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0%;
+       margin-bottom: 200px;
+top: 0;
+        width: 300px;
+        position: absolute;     
+        
+    }
+    .col2 img{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 10%;  
+        top: 520px;
+        margin-bottom: 510px;
+
+    
+    }
+    .col3 img{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 800px;
+        padding-top: 80px;
+        margin-top: 220px;
+        margin-bottom: 70px;
+        left: 10%;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        margin-top: 69%;
+    }
+    figcaption{ 
+        width: 300px;
+        font-size: 11px;
+        position: relative;
+        height: 100px;
+        font-size: 12px;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-items: center;
+     }
+     .col1 figcaption{
+        width: 300px;
+     
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        height: 509px;
+        left: 0%;
+       margin-bottom: 200px;
+top: 0;
+        width: 300px;
+        position: absolute;   
+     background-color: gray;
+    
+     transition:all    0.9s ;
+     }.col1:hover figcaption{
+         display: block;
+     }
+     .col2 figcaption{
+         position: absolute;
+         width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        left: 10%;  
+        top: 520px;
+        
+        margin-bottom: 510px;
+
+height: 470px;  
+             
+             background-color: gray;
+             display: none;
+             transition:all    0.5s ;
+             
+            
+           
+     }
+     .col2:hover figcaption{
+         display: block;
+      
+     
+     }
+     .col3 figcaption{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 800px;
+    
+        margin-top: 301px;
+        margin-bottom: 70px;
+        left: 10%;
+        height: 449px;
+             
+             background-color: gray;
+           display: none;
+             transition:all    0.9s ;
+             
+            
+           
+     }
+     .col3:hover figcaption{
+         display: block;
+      
+     
+     }
+     .services{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        left: -100px;  
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+     }
+     .services h1{
+        position: absolute;
+        top: 238%;
+       bottom: 0;
+     }
+     .services img{
+        display: flex;
+     }
+     .service1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 100%;
+        margin-top: 50px;
+        height: 300px;
+     }
+     .service1 h3{
+        position: absolute;
+       left: 10px;
+       top: 800px;
+       margin-top: 695px;
+       margin-bottom: 0px; 
+     }
+      .service1 img{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+       left: 0;
+       top: 800px;
+       margin-top: 250px;
+       margin-bottom: 250px;
+
+        
+      
+     }
+     .service2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 100%;  
+        
+        left: 0;  
+        margin-top: 50px;
+     }
+     .service2 img{
+        position: absolute;
+        top: 100%;
+
+        margin-top: 970px;
+        left: 0;
+        padding-bottom: 85%;
+        padding-top: 220px;
+     }
+     .service3{
+        position: relative;
+        top: 100%;
+        bottom: 0;
+
+     }
+     .service3 img{
+        position: absolute;
+        top: 982px;
+        left: 0;
+        margin-top: 710px;
+     }
+     
+     .service2 h3{
+        position: absolute;
+        height: 200px;  
+bottom: 0px;
+        margin-top: 820px;
+        left: -10px;
+        padding-bottom: 40%;
+        padding-top: 250px;
+        width: 330px;
+
+
+     }
+     .service3 h3{
+        position: absolute;
+        top: 1150px;
+        left: 10px;
+        margin-top: 990px;
+     }
+     
+   footer{
+    position: relative;
+    bottom: 0;
+    letter-spacing: normal;
+    margin-top: 184vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   }
+   .container{
+    text-align: left;
+    padding: 5px ;
+    margin-left: 20px;
+   }
+   footer p{
+display: flex;
+position: absolute;
+left: 0;
+top: 100%;
+   }
+  
+}
