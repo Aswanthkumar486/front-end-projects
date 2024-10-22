@@ -1,3 +1,4 @@
+/* Reset and general styles */
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +69,7 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
-    text-align: center; /* Ensuring content is centered */
+    text-align: center;
 }
 
 .header-text h1 {
@@ -80,7 +81,7 @@ nav ul li a:hover::after {
     color: #ff004f;
 }
 
-/* Responsive About Section */
+/* --- About Section (Old Style) --- */
 #about {
     padding: 80px 0px;
     color: #ababab;
@@ -116,49 +117,169 @@ nav ul li a:hover::after {
     color: white;
 }
 
-/* Portfolio Section Fix */
-#portfolio {
-    padding: 50px 0;
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
 }
 
-.work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.work {
-    border-radius: 10px;
+.tab-links {
+    font-size: 18px;
+    margin-right: 50px;
+    cursor: pointer;
+    font-weight: 500;
     position: relative;
-    overflow: hidden;
-    border: 2px solid gray;
-    text-align: center;
 }
 
-.work img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-}
-
-.layer {
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: 0;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.tab-contents ul li span {
+    color: #ff004f;
+    font-size: 15px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* --- Contact Section (Old Style) --- */
+.contact-left {
+    position: relative;
+}
+
+.contact-right {
+    position: relative;
+    bottom: 450px;
+    width: 100%;
+    padding: 20px 20px;
+    margin-left: 200px;
+    height: 310px;
+    left: 100%;
+    border-radius: 6px;
+}
+
+.contact-right input {
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border: #ababab 2px solid;
+    background: #262626;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.contact-left p {
+    padding: 10px;
+    margin: 5px;
+    letter-spacing: 1.2px;
+}
+
+.contact-right textarea {
+    background: transparent;
+    margin-top: 20px;
+    border: #ababab 2px solid;
+    margin-left: 15px;
+    background-color: #262626;
+    padding: 5px;
+}
+
+.contact-right button {
+    border-radius: 20px;
+    width: 50%;
     text-align: center;
-    transition: height 0.5s;
+    padding: 10px 12px;
+    margin-top: 20px;
+    margin-left: 25%;
+    color: white;
+    transition: color .5s, transform .5s;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+}
+
+.contact-right button:hover {
+    background: #ababab;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-left {
+    margin-top: 50px;
+    padding: 40px;
+}
+
+.contact-left svg {
+    color: #ff004f;
+    margin-bottom: 38px;
+}
+
+.contact-right input {
+    margin: 10px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px;
+}
+
+.social-icons svg:hover {
+    color: #fff;
+}
+
+.btn2 {
+    text-decoration: none;
+    width: 100px;
+    background-color: #ff004f;
+    color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 13px;
+    margin-right: 20px;
+    transition: height .5s;
+}
+
+.btn2 a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+.btn2:hover {
+    height: 44px;
+    background-color: #fff;
+    transform: scaleY(1);
+}
+
+/* --- Footer Section (Old Style) --- */
+footer {
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #ababab;
+    padding: 40px;
 }
 
 /* Ensure all sections fit within screen size */
@@ -173,7 +294,7 @@ section, footer, .work {
         padding: 40px;
         font-size: 16px;
     }
-    
+
     .header-text h1 {
         font-size: 30px;
     }
@@ -196,7 +317,6 @@ section, footer, .work {
         padding: 11px;
     }
 
-    /* Centered navigation for mobile */
     nav ul {
         display: block;
         text-align: center;
