@@ -257,7 +257,7 @@ nav ul li a:hover::after {
     position: relative;
 }
 
-.contact-right {
+/* .contact-right {
     position: relative;
     bottom: 450px;
     width: 100%;
@@ -266,9 +266,9 @@ nav ul li a:hover::after {
     height: 310px;
     left: 100%;
     border-radius: 6px;
-}
+} */
 
-.contact-right input {
+/* .contact-right input {
     height: 36px;
     border: none;
     background-color: transparent;
@@ -277,7 +277,7 @@ nav ul li a:hover::after {
     background: #262626;
     width: 100%;
     margin-left: 15px;
-}
+} */
 
 .contact-left p {
     padding: 10px;
@@ -285,7 +285,7 @@ nav ul li a:hover::after {
     letter-spacing: 1.2px;
 }
 
-.contact-right textarea {
+/* .contact-right textarea {
     background: transparent;
     margin-top: 20px;
     border: #ababab 2px solid;
@@ -304,22 +304,78 @@ nav ul li a:hover::after {
     color: white;
     transition: color .5s, transform .5s;
     background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-}
+} */
 
 .contact-right button:hover {
     background: #ababab;
 }
 
-.contact-right form {
+/* .contact-right form {
     display: flex;
     flex-direction: column;
     position: relative;
+} */
+.contact-right {
+    position: relative;
+    bottom: 450px;
+    width: 100%;
+    padding: 20px;
+    margin-left: 200px;
+    height: 310px;
+    left: 100%;
+    border-radius: 6px;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.contact-right input, .contact-right textarea {
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border: #ababab 2px solid;
+    background: #262626;
+    width: 90%; /* Prevent the input from overflowing */
+    margin-left: 15px;
+    box-sizing: border-box; /* Ensure padding does not affect the total width */
+}
+
+.contact-right textarea {
+    height: 100px; /* Adjust the height for textarea */
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure form doesn't overflow */
+}
+
+.contact-right button {
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    padding: 10px 12px;
+    margin-top: 20px;
+    margin-left: 25%;
+    color: white;
+    transition: color .5s, transform .5s;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
 }
 
 .contact-left {
     margin-top: 50px;
     padding: 40px;
 }
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px;
+}
+
+/* .contact-left {
+    margin-top: 50px;
+    padding: 40px;
+} */
 
 .contact-left svg {
     color: #ff004f;
