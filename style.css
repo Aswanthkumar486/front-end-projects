@@ -41,7 +41,9 @@ nav ul li a {
     font-size: 18px;
     position: relative;
 }
-
+  nav svg.bi-x-lg{
+  display:none;
+  }
 nav ul li a::after {
     content: "";
     width: 0;
