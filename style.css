@@ -18,6 +18,12 @@ body{
    
   
 }
+ nav svg.bi-x-lg{
+ display:none;
+ }
+ nav svg.bi-x-list{
+     display:none;
+ }
 .container{
     padding: 10px 10%;
 }
