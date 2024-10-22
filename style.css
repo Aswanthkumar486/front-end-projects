@@ -507,7 +507,9 @@ footer{
 
         
     }
-    
+    footer{
+        position: fixed;
+    }
     
     
 
